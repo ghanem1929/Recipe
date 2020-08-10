@@ -1,8 +1,9 @@
 #root{
-    background-color: #41628c;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+    background-color: #d1cdd7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .ingredient{
     margin: 0px;
@@ -42,16 +43,24 @@
 
 
 }
+img{
+    text-align: center;
+}
 
 .ingredientList{
     margin-bottom: 10px;
 }
 
-img{
-    margin: 20px;
-    border-radius: 50%;
+.list-group {
+    border-radius: 20px;
 }
 
 .ing{
     background-color: #cedcee;
+}
+
+.btn form-inline my-2 my-lg-0{
+    text-align: center;
+    margin-left: 200px;
+    background-color: black;
 }

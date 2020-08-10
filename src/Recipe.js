@@ -7,11 +7,17 @@ const Recipe = ({title,calorie,image,ingredients}) => {
             <h1>{title}</h1>
             <h3 className="calorie">calories : {calorie}</h3>
             <div className="ing">
-            <ul className="ingredient">{ingredients.map(ingredients => (
+            {/* <ul className="ingredient">{ingredients.map(ingredients => (
                 <li className="ingredientList">{ingredients.text}</li>
-            ))}</ul>
+            ))}</ul> */}
+
+
+            <ul class="list-group">{ingredients.map(ingredients =>(
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                {ingredients.text}</li>))}
+            </ul>
             </div>
-            <img src={image} alt=""/>
+            <img className="image" src={image} alt=""/>
 
         </div>
     );

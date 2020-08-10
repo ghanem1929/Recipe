@@ -1,5 +1,6 @@
 import React,{useEffect,useState} from 'react';
 import './App.css';
+import './bootstrap.min.css';
 import Recipe from './Recipe';
 
 const App = () => {
@@ -34,7 +35,7 @@ const App = () => {
 
   return(
     <div>
-      <form onSubmit={getSearch} className="search_form">
+      {/* <form onSubmit={getSearch} className="search_form">
         <input className="search_bar" 
                   type="text"
                   value={search}
@@ -47,7 +48,26 @@ const App = () => {
               calorie={recipe.recipe.calories} 
               image= {recipe.recipe.image} 
               ingredients = {recipe.recipe.ingredients} />
+      ))} */}
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <form class="form-inline my-2 my-lg-0" onSubmit={getSearch}>
+        <input class="form-control mr-sm-2" 
+                type="text" 
+                placeholder="Search" 
+                value={search} 
+                onChange={updateSearch}/>
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      </nav>
+      <div className="recipe">
+      {Recipes.map(recipe => (
+      <Recipe key ={recipe.recipe.label}
+              title={recipe.recipe.label}
+              calorie={recipe.recipe.calories} 
+              image= {recipe.recipe.image} 
+              ingredients = {recipe.recipe.ingredients} />
       ))}
+</div>
     </div>
   );
 }
