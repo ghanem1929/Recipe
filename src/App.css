@@ -1,66 +1,66 @@
-#root{
-    background-color: #d1cdd7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+* {
+  margin: 0;
+  padding: 0.5rem 1.5rem;
+  box-sizing: content-box;
 }
-.ingredient{
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    font-family: Florence, cursive;
-    font-weight: bold;
-    list-style-type: none;
+body {
+  width: 100%;
 }
-
-
-.search_bar{
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-    border-radius: 20px;
-    width: 300px;
-    height: 30px;
-    margin-left: 50px;
-
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-.search_button{
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    background-color: #FF9933;
-    text-decoration: white;
-    border-radius: 20px;
-    padding: 0px;
-    margin: 0px;
-    margin: 20px;
+form {
+  width: 100%;
+  margin: 2% 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: rgba(20, 80, 40, 0.4);
+}
+form input {
+  width: 60%;
+  padding: 0.8rem;
+  border: none;
 }
 
-.search_form{
-    position: relative;
-
-
-}
-img{
-    text-align: center;
+form input:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
 }
 
-.ingredientList{
-    margin-bottom: 10px;
+form button {
+  padding: 0.8rem;
+  width: 30%;
+  border: none;
 }
-
-.list-group {
-    border-radius: 20px;
+li {
+  list-style-type: none;
+  margin: 1% 0;
 }
-
-.ing{
-    background-color: #cedcee;
+.recipe-cards {
+  margin: 0;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
-
-.btn form-inline my-2 my-lg-0{
-    text-align: center;
-    margin-left: 200px;
-    background-color: black;
+.recipe-card {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2% 0;
+  background-color: rgba(0, 70, 30, 0.7);
+  border-radius: 15px;
+  padding: 0%;
+}
+img {
+  border-radius: 50%;
 }
